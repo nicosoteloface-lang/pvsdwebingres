@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Era Diseño - Páginas Web Profesionales para Emprendedores | La Pampa</title>
+    <meta name="description" content="Diseño web profesional y landing pages para emprendedores en La Pampa. Sitios web modernos, optimizados y que convierten visitantes en clientes.">
+    <meta name="keywords" content="diseño web, landing pages, emprendedores, La Pampa, páginas web profesionales, sitios web modernos">
+    <meta name="author" content="Nueva Era Diseño">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Nueva Era Diseño - Páginas Web Profesionales para Emprendedores">
+    <meta property="og:description" content="Diseño web profesional y landing pages que convierten. Especialistas en emprendedores de La Pampa.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data para Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebDesignService",
+        "name": "Nueva Era Diseño",
+        "description": "Diseño web profesional y landing pages para emprendedores",
+        "areaServed": "La Pampa, Argentina",
+        "serviceType": "Diseño Web, Landing Pages, Sitios Web Profesionales"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #0A0E27;
+            --secondary: #1A1D3A;
+            --accent: #00D9FF;
+            --accent-warm: #FF6B35;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B8BCC8;
+            --text-dark: #2D3142;
+            --surface: #151829;
+            --surface-light: #1E2139;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-hero: linear-gradient(135deg, #0A0E27 0%, #1A1D3A 50%, #151829 100%);
+            --gradient-card: linear-gradient(145deg, #1E2139 0%, #151829 100%);
+            --gradient-accent: linear-gradient(135deg, #00D9FF 0%, #0099CC 100%);
+            --gradient-warm: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--primary);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header Profesional */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header-scrolled {
+            background: rgba(10, 14, 39, 0.98);
+            backdrop-filter: blur(30px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+        
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -8px;
+            left: 0;
+            background: var(--gradient-accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-nav {
+            background: var(--gradient-accent);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.25);
+        }
+        
+        .cta-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 217, 255, 0.4);
+        }
+        
+        /* Hero Section Ultra Profesional */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.08) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300D9FF' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .hero-text h1 .accent {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-text .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat {
+            text-align: left;
+        }
+        
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.25);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 217, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 1rem 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        .hero-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-mockup {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .mockup-container {
+            background: var(--gradient-card);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(0, 217, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mockup-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .mockup-header {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .mockup-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .dot-red { background: #FF5F56; }
+        .dot-yellow { background: #FFBD2E; }
+        .dot-green { background: #27CA3F; }
+        
+        .mockup-content {
+            background: var(--surface);
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .mockup-line {
+            height: 8px;
+            background: var(--gradient-accent);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        .mockup-line:nth-child(1) { width: 80%; }
+        .mockup-line:nth-child(2) { width: 60%; background: var(--gradient-warm); }
+        .mockup-line:nth-child(3) { width: 90%; }
+        .mockup-line:nth-child(4) { width: 45%; background: var(--gradient-warm); }
+        
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.6;
+            animation: floatElement 6s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 10%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            bottom: 20%;
+            left: 5%;
+            animation-delay: 2s;
+        }
+        
+        @keyframes floatElement {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
+        
+        .element-card {
+            background: var(--surface-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Servicios Premium */
+        .services {
+            padding: 8rem 0;
+            background: var(--surface);
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--accent);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+        }
+        
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .service-card {
+            background: var(--gradient-card);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            border-radius: 16px;
+            padding: 3rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            border-color: rgba(0, 217, 255, 0.3);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .service-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .service-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features {
+            list-style: none;
+        }
+        
+        .service-features li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Why Us Section */
+        .why-us {
+            padding: 8rem 0;
+            background: var(--primary);
+            position: relative;
+        }
+        
+        .why-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 70% 30%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 30% 70%, rgba(0, 217, 255, 0.05) 0%, transparent 50%);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--gradient-card);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-warm);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .feature h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .feature p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        /* Contact Section Premium */
+        .contact {
+            padding: 8rem 0;
+            background: var(--surface);
+            position: relative;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: start;
+        }
+        
+        .contact-info h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .contact-info p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+        
+        .contact-details {
+            margin-bottom: 3rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--gradient-card);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .contact-form {
+            background: var(--gradient-card);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: var(--surface);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: var(--gradient-accent);
+            color: white;
+            border: none;
+            padding: 1.2rem 3rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.25);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 217, 255, 0.4);
+        }
+        
+        /* Footer Premium */
+        footer {
+            background: var(--primary);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-brand h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-brand p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--surface-light);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .footer-section h4 {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+        
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Loading animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-text h1,
+        .hero-text .subtitle,
+        .hero-stats,
+        .hero-ctas {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .hero-text .subtitle { animation-delay: 0.2s; }
+        .hero-stats { animation-delay: 0.4s; }
+        .hero-ctas { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon">N</div>
+                Nueva Era
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">¿Por qué nosotros?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="cta-nav">Consulta Gratuita</a>
+        </nav>
+    </header>
+
+    
+                        </div>
+                    </div>
+                    
+                    <div class="floating-element">
+                        <div class="element-card">
+                            <div style="color: #00D9FF; font-weight: 600;">+300%</div>
+                            <div style="font-size: 0.8rem; color: #B8BCC8;">Conversiones</div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-element">
+                        <div class="element-card">
+                            <div style="color: #FF6B35; font-weight: 600;">2.5s</div>
+                            <div style="font-size: 0.8rem; color: #B8BCC8;">Carga Rápida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Soluciones Digitales de Clase Mundial</h2>
+                <p class="section-subtitle">Transformamos tu visión en realidad digital con tecnología de vanguardia y diseño que impacta</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">🎯</div>
+                    <h3>Landing Pages de Alto Rendimiento</h3>
+                    <p>Landing pages optimizadas específicamente para Google Ads con tasas de conversión superiores al 15%. Diseño psicológicamente orientado a la acción.</p>
+                    <ul class="service-features">
+                        <li>Optimización para Google Ads</li>
+                        <li>A/B Testing integrado</li>
+                        <li>Carga ultra-rápida</li>
+                        <li>Analytics avanzado</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">💼</div>
+                    <h3>Sitios Web Corporativos</h3>
+                    <p>Presencia digital profesional que posiciona tu marca como líder del mercado. Arquitectura web estratégica y experiencia de usuario excepcional.</p>
+                    <ul class="service-features">
+                        <li>Diseño responsive premium</li>
+                        <li>SEO técnico avanzado</li>
+                        <li>CMS personalizado</li>
+                        <li>Integración con herramientas</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">🚀</div>
+                    <h3>E-commerce Profesional</h3>
+                    <p>Tiendas online que venden 24/7 con sistemas de pago integrados, gestión de inventario automática y experiencia de compra optimizada.</p>
+                    <ul class="service-features">
+                        <li>Pasarelas de pago múltiples</li>
+                        <li>Gestión automática de stock</li>
+                        <li>Sistema de envíos integrado</li>
+                        <li>Panel administrativo completo</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">📊</div>
+                    <h3>Optimización y Analytics</h3>
+                    <p>Análisis profundo del comportamiento de usuarios, optimización continua de conversiones y reportes detallados de rendimiento.</p>
+                    <ul class="service-features">
+                        <li>Google Analytics 4 avanzado</li>
+                        <li>Heatmaps y session recordings</li>
+                        <li>Reportes mensuales detallados</li>
+                        <li>Optimización continua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="why-us">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">¿Por Qué Nueva Era?</span>
+                <h2 class="section-title">La Ventaja Competitiva que Necesitas</h2>
+                <p class="section-subtitle">Combinamos expertise técnico con conocimiento profundo del mercado pampeano</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature scroll-reveal">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Resultados Comprobados</h3>
+                    <p>Track record de +150 proyectos exitosos con incrementos promedio del 280% en conversiones online.</p>
+                </div>
+                
+                <div class="feature scroll-reveal">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Especialistas en La Pampa</h3>
+                    <p>Conocimiento profundo del mercado local, comportamiento del consumidor pampeano y oportunidades regionales.</p>
+                </div>
+                
+                <div class="feature scroll-reveal">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Tecnología de Punta</h3>
+                    <p>Utilizamos las últimas tecnologías y frameworks para garantizar sitios rápidos, seguros y escalables.</p>
+                </div>
+                
+                <div class="feature scroll-reveal">
+                    <div class="feature-icon">📞</div>
+                    <h3>Soporte Premium 24/7</h3>
+                    <p>Equipo dedicado disponible para resolver cualquier consulta o problema técnico en tiempo récord.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info scroll-reveal">
+                    <h2>¿Listo para Dominar el Mercado Digital?</h2>
+                    <p>Agenda tu consulta estratégica gratuita y descubre cómo llevar tu negocio al siguiente nivel. Respuesta garantizada en menos de 2 horas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Ubicación</strong><br>
+                                La Pampa, Argentina
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                consultas@nuevaeradiseno.com.ar
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <strong>WhatsApp</strong><br>
+                                +54 9 2954 XX-XXXX
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <strong>Horarios</strong><br>
+                                Lun-Vie: 9:00-18:00 / Sáb: 10:00-14:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form scroll-reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Corporativo *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@empresa.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 XXXX XX-XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="empresa">Empresa / Emprendimiento</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="proyecto">Tipo de Proyecto *</label>
+                        <select id="proyecto" name="proyecto" required>
+                            <option value="">Selecciona tu necesidad</option>
+                            <option value="landing-page">Landing Page para Google Ads</option>
+                            <option value="sitio-corporativo">Sitio Web Corporativo</option>
+                            <option value="ecommerce">Tienda Online / E-commerce</option>
+                            <option value="rediseño">Rediseño de Sitio Existente</option>
+                            <option value="optimizacion">Optimización y Analytics</option>
+                            <option value="consultoria">Consultoría Digital</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto Aproximado</label>
+                        <select id="presupuesto" name="presupuesto">
+                            <option value="">Selecciona tu rango</option>
+                            <option value="hasta-100k">Hasta $100.000</option>
+                            <option value="100k-300k">$100.000 - $300.000</option>
+                            <option value="300k-500k">$300.000 - $500.000</option>
+                            <option value="500k-mas">$500.000 o más</option>
+                            <option value="consultar">Prefiero consultar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Detalles del Proyecto *</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu negocio, objetivos, competencia, y qué esperas lograr con tu presencia digital..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Solicitar Consulta Estratégica Gratuita</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Nueva Era Diseño</h3>
+                    <p>Agencia líder en diseño web y marketing digital para emprendedores de La Pampa. Transformamos ideas en experiencias digitales exitosas.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                        <a href="#" class="social-link">tw</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Landing Pages</a></li>
+                        <li><a href="#servicios">Sitios Web</a></li>
+                        <li><a href="#servicios">E-commerce</a></li>
+                        <li><a href="#servicios">Optimización</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nueva Era Diseño. Todos los derechos reservados. | La Pampa, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Form validation
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const proyecto = document.getElementById('proyecto').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            if (!nombre || !email || !proyecto || !mensaje) {
+                alert('Por favor completa todos los campos obligatorios.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor ingresa un email válido.');
+                return;
+            }
+            
+            // Submit animation
+            submitBtn.textContent = 'Enviando consulta...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            
+            // Simulate form submission (replace with actual backend integration)
+            setTimeout(() => {
+                submitBtn.textContent = '¡Consulta Enviada Exitosamente! ✓';
+                submitBtn.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)';
+                
+                // Reset form after success
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.background = '';
+                    
+                    // Show thank you message
+                    alert('¡Gracias por tu consulta! Te contactaremos dentro de las próximas 2 horas.');
+                }, 2000);
+            }, 2000);
+        });
+
+        // Performance optimization
+        window.addEventListener('load', function() {
+            // Lazy load images if any
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => imageObserver.observe(img));
+        });
+
+        // Mobile menu toggle (for future mobile menu implementation)
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-open');
+        }
+
+        // Analytics tracking (replace with your analytics code)
+        function trackEvent(eventName, properties = {}) {
+            // gtag('event', eventName, properties);
+            console.log('Event tracked:', eventName, properties);
+        }
+
+        // Track form interactions
+        document.getElementById('contactForm').addEventListener('focus', function(e) {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+                trackEvent('form_field_focus', { field: e.target.name });
+            }
+        }, true);
+
+        // Track CTA clicks
+        document.querySelectorAll('.btn-primary, .btn-secondary, .cta-nav').forEach(button => {
+            button.addEventListener('click', function() {
+                trackEvent('cta_click', { 
+                    button_text: this.textContent.trim(),
+                    button_location: this.closest('section')?.id || 'header'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
